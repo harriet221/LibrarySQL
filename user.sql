@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `library`.`user` (
+  `user_id` VARCHAR(20) NOT NULL,
+  `phone` VARCHAR(20) NOT NULL,
+  `use_name` VARCHAR(10) NOT NULL,
+  `age` INT NOT NULL DEFAULT 0,
+  `address` VARCHAR(20) NOT NULL,
+  `p_amount` SMALLINT NOT NULL DEFAULT 5,
+  `b_amount` SMALLINT NOT NULL DEFAULT 0,
+  PRIMARY KEY (`user_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
